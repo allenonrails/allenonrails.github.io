@@ -1,0 +1,15 @@
+---
+layout: deafult
+---
+
+<h1>{{ resource.data.name }}</h1>
+<p>{{  resource.data.annotation }}</p>
+<span>Volume: {{ resource.relations.units.size  }} units</span>
+
+{% assign units_by_positions = resource.relations.units | sort: "position" %}
+{% for unit in units_by_positions %}
+  <a href="{{ unit.relative_url  }}">{{ unit.data.name }}</a>
+{% endfor %}
+
+{{ yield }}
+

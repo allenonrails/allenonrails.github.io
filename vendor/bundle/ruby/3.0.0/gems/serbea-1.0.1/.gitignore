@@ -1,0 +1,21 @@
+/vendor
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/tmp/
+*.bundle
+*.so
+*.o
+*.a
+mkmf.log
+*.gem
+Gemfile.lock
+.bundle
+.ruby-version
+
+# Mac files
+.DS_Store
