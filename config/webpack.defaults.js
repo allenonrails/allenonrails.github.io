@@ -17,7 +17,7 @@ const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
 const entry = { main: path.resolve(rootDir, "frontend", "javascript", "index.js") }
 const output = {
-  path: path.resolve(rootDir, "output", "_bridgetown", "static", "js"),
+  path: path.resolve(rootDir, "docs", "_bridgetown", "static", "js"),
   filename: "[name].[contenthash].js",
   publicPath: "",
 }
