@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>Квест-шоу Форт Бобр Ярд</title>
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+    <h2 class="preloader-title">Загрузка</h2>
+  </div>
+
+  <div class="modal">
+    <div class="cross">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 3L27 27M3 27L27 3" stroke="#fff" stroke-width="3" />
+      </svg>
+    </div>
+    <div class="modal-image">
+      <img width="300px" src="./img/chest.png" alt="chess">
+    </div>
+    <form action="POST">
+      <input placeholder="Имя" type="text" class="faq-input">
+      <input placeholder="Телефон" type="text" class="faq-input">
+      <input placeholder="E-mail" type="email" class="faq-input">
+      <button type="submit" class="faq-button button">Узнать стоимость</a>
+    </form>
+  </div>
+  <div
+    style="background-image: url(./img/graphics/noise.gif); background-size: 300px; opacity: calc(8 / 100); height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 17000; pointer-events: none;">
+  </div>
+
+  <div class="navbar-list">
+    <a href="#about" class="navbar-item">Для кого</a>
+    <a href="#how" class="navbar-item">Формат</a>
+    <a href="#gallery" class="navbar-item">Галерея</a>
+    <a href="#price" class="navbar-item">Пакет услуг</a>
+    <a href="#reviews" class="navbar-item">Вопросы</a>
+    <a href="#contacts" class="navbar-item">Контакты</a>
+  </div>
+  <header class="header">
+    <div class="cloud"><img width="992px" src="./img/graphics/cloud.png" alt="cloud"></div>
+    <nav class="header-menu">
+      <a href="#about" class="header-link">Для кого</a>
+      <a href="#how" class="header-link">Этапы игры</a>
+      <a href="#gallery" class="header-link">Галерея</a>
+      <a href="#main" class="header-link header-logo"><img src="./img/logo.png" alt="logo fort boyard"></a>
+      <a href="#price" class="header-link">Пакет услуг</a>
+      <a href="#reviews" class="header-link">Вопросы</a>
+      <a href="#contacts" class="header-link">Контакты</a>
+    </nav>
+    <a href="tel:+375447750090" class="header-phone">
+      +375 44 775 00 90
+    </a>
+    <div class="burger">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+    <video class="main-video" muted autoplay loop>
+      <source src="./video/bg.mp4" type="video/mp4">
+    </video>
+    <div class="main-block">
+      <h1 class="main-text">
+        <span>Квест-шоу</span> по мотивам всемирно известной телеигры «Форт боярд» <br> в крепости XIX века
+      </h1>
+      <a href="#advantages" class="main-button">Подробнее</a>
+    </div>
+  </main>
+
+  <section class="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-block">
+          <img class="about-block-image" src="./img/hero1.png" alt="Мастер Теней">
+        </div>
+        <div class="about-block">
+          <h2 class="about-title">
+            от 120 минут
+          </h2>
+          <p class="about-description">
+            Приключений с испытаниями среди тайников, лабиринтов, экзотических животных и реалистичных декораций
+            крепости XIX века
+          </p>
+        </div>
+        <div class="about-block">
+          <img class="about-block-image" src="./img/hero2.png" alt="Старец Фура">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages" class="advantages">
+    <div class="key rellax" data-rellax-speed="-2">
+      <img src="./img/graphics/key.png" alt="ключ">
+    </div>
+    <div class="container">
+      <h3 id="about" class="advantages-main">Выберите свой формат праздника</h3>
+      <div class="advantages-list">
+        <div class="advantages-list-item letter ">
+          <div class="advantages-list-item__photo">
+            <img src="./img/photos/6.jpg" alt="photo">
+          </div>
+          <div class="advantages-list-item__image"> <img src="./img/icons/advantages-icon1.svg" alt="иконка праздники">
+          </div>
+          <div class="advantages-list-item__text">Семейные праздники и Дни Рождения</div>
+        </div>
+        <div class="advantages-list-item letter">
+          <div class="advantages-list-item__photo">
+            <img src="./img/photos/7.jpg" alt="photo">
+          </div>
+          <div class="advantages-list-item__image"> <img src="./img/icons/advantages-icon2.svg" alt="иконка выпускной">
+          </div>
+          <div class="advantages-list-item__text">Выпускные, встречи друзей</div>
+        </div>
+        <div class="advantages-list-item letter">
+          <div class="advantages-list-item__photo">
+            <img src="./img/photos/8.jpg" alt="photo">
+          </div>
+          <div class="advantages-list-item__image"> <img src="./img/icons/advantages-icon3.svg"
+              alt="иконка корпоративы"></div>
+          <div class="advantages-list-item__text">Корпоративы,  тимбилдинг</div>
+        </div>
+        <div class="advantages-list-item letter">
+          <div class="advantages-list-item__photo">
+            <img src="./img/photos/9.jpg" alt="photo">
+          </div>
+          <div class="advantages-list-item__image"> <img src="./img/icons/advantages-icon4.svg" alt="иконка события">
+          </div>
+          <div class="advantages-list-item__text">Новый год и другие события</div>
+        </div>
+      </div>
+      <div class="advantages-wrap">
+        <div class="advantages-video ">
+          <img src="./img/advantages-video.png" alt="видео о форт боярде">
+        </div>
+        <div class="advantages-text">
+          <h2 class="advantages-title  ">Возьмем на себя все заботы - вы лишь пригласите гостей!</h2>
+          <p class="advantages-description  ">Увлекательный сценарий, продуманный до мелочей, понравится каждому игроку,
+            не зависимо от возраста.</p>
+          <a href="javascript:;" class="button button-view advantages-button  ">Смотреть</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="passing">
+    <div class="chest rellax">
+      <img src="./img/graphics/chest.png" alt="сундук">
+    </div>
+    <div class="container">
+      <h2 class="passing-title">Как проходит Квест-шоу по мотивам телеигры Форт Боярд</h2>
+      <div class="passing-wrap">
+        <div data-number="1" class="passing-block passing-block-1">
+          <div class="passing-block__image">
+            <img src="./img/logo.png" alt="logo">
+          </div>
+          <h3 class="passing-block__title">Встреча с ведущим квест-шоу</h3>
+          <p class="passing-block__description">Ведущий проводит инструктаж и рассказывает легенду Форта.</p>
+        </div>
+        <div data-number="2" class="passing-block passing-block-2">
+          <div class="passing-block__image">
+            <img src="./img/passing2.png" alt="clock image">
+          </div>
+          <h3 class="passing-block__title">Старт шоу-квеста</h3>
+          <p class="passing-block__description">Деление на команды, выдача футболок на игру и подготовка к интересным
+            испытаниям.</p>
+        </div>
+        <div data-number="3" class="passing-block passing-block-3">
+          <div class="passing-block__image">
+            <img src="./img/passing3.png" alt="key image">
+          </div>
+          <h3 class="passing-block__title">Захватывающие испытания</h3>
+          <p class="passing-block__description">10 увлекательных заданий, цель которых собрать как можно больше ключей.
+          </p>
+        </div>
+        <div data-number="4" class="passing-block passing-block-4">
+          <div class="passing-block__image">
+            <img src="./img/passing4.png" alt="gold image">
+          </div>
+          <h3 class="passing-block__title">Борьба за килограммы золота</h3>
+          <p class="passing-block__description">Все участники дружной командой, объеденив усилия, борятся за золото.</p>
+        </div>
+        <div data-number="5" class="passing-block passing-block-5">
+          <div class="passing-block__image">
+            <img src="./img/passing5.png" alt="fort image">
+          </div>
+          <h3 class="passing-block__title">Отдых на фуд-корт зоне</h3>
+          <p class="passing-block__description">Гости могут воспользоваться фуд-зоной.</p>
+        </div>
+        <div data-number="6" class="passing-block passing-block-6">
+          <div class="passing-block__image">
+            <img src="./img/passing6.png" alt="balls image">
+          </div>
+          <h3 class="passing-block__title">Завершение программы</h3>
+          <p class="passing-block__description">Награждение участников. Обсуждение квеста, фото и видео съемка.</p>
+        </div>
+      </div>
+      <a href="javascript:;" class="button button-modal passing-button">Забронировать дату</a>
+    </div>
+  </section>
+
+  <section id="gallery" class="fort">
+    <div class="rellax coin coin-1"><img src="./img/graphics/coin.png" alt="монета"></div>
+    <div class="rellax coin coin-2"><img src="./img/graphics/coin.png" alt="монета"></div>
+    <div class="rellax coin coin-3"><img src="./img/graphics/coin.png" alt="монета"></div>
+    <div class="rellax coin coin-4"><img src="./img/graphics/coin.png" alt="монета"></div>
+    <div class="container">
+      <h2 class="fort-title">Что вас ждёт в Квест-шоу?</h2>
+      <div class="fort-image">
+        <img src="./img/fort.jpg" alt="форт фото">
+      </div>
+      <div class="fort-wrap">
+        <div class="fort-slider">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/photos/1.jpg" alt="gallery photo 1"></div>
+              <div class="swiper-slide"><img src="./img/photos/2.jpg" alt="gallery photo 2"></div>
+              <div class="swiper-slide"><img src="./img/photos/3.jpg" alt="gallery photo 3"></div>
+              <div class="swiper-slide"><img src="./img/photos/4.jpg" alt="gallery photo 4"></div>
+              <div class="swiper-slide"><img src="./img/photos/5.jpg" alt="gallery photo 5"></div>
+              <div class="swiper-slide"><img src="./img/photos/6.jpg" alt="gallery photo 6"></div>
+              <div class="swiper-slide"><img src="./img/photos/7.jpg" alt="gallery photo 7"></div>
+              <div class="swiper-slide"><img src="./img/photos/8.jpg" alt="gallery photo 8"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/photos/1.jpg" alt="gallery photo 1"></div>
+              <div class="swiper-slide"><img src="./img/photos/2.jpg" alt="gallery photo 2"></div>
+              <div class="swiper-slide"><img src="./img/photos/3.jpg" alt="gallery photo 3"></div>
+              <div class="swiper-slide"><img src="./img/photos/4.jpg" alt="gallery photo 4"></div>
+              <div class="swiper-slide"><img src="./img/photos/5.jpg" alt="gallery photo 5"></div>
+              <div class="swiper-slide"><img src="./img/photos/6.jpg" alt="gallery photo 6"></div>
+              <div class="swiper-slide"><img src="./img/photos/7.jpg" alt="gallery photo 7"></div>
+              <div class="swiper-slide"><img src="./img/photos/8.jpg" alt="gallery photo 8"></div>
+            </div>
+          </div>
+        </div>
+        <div class="fort-text">
+          <div class="fort-text__image">
+            <img src="./img/chest.png" alt="сундук фото">
+          </div>
+          <h3 class="fort-text__title">Наша галерея участников</h3>
+          <p class="fort-text__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum possimus fugit eius et, repellat non
+            dignissimos itaque, maiores atque, impedit accusantium minima tempora numquam neque similique laborum
+            consectetur magnam deserunt!
+          </p>
+          <a href="http://fortgame.by/foto.php" target="_blank" class="button fort-button">Смотреть все фото</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="effects">
+    <div class="chess rellax">
+      <img src="./img/graphics/chess.png" alt="chest">
+    </div>
+    <div class="container">
+      <h2 class="effects-title glitch">квест-шоу это настоящее приключение</h2>
+      <p class="effects-description">со спецэффектами, эксклюзивным реквизитом и необычными заданиями.</p>
+      <div class="effects-wrap">
+        <div class="effects-block"><img src="./img/effect1.png" alt="effect 1"></div>
+        <div class="effects-block"><img src="./img/effect2.png" alt="effect 2"></div>
+        <div class="effects-block"><img src="./img/effect3.png" alt="effect 3"></div>
+        <div class="effects-block"><img src="./img/effect4.png" alt="effect 4"></div>
+        <div class="effects-block"><img src="./img/effect5.png" alt="effect 5"></div>
+        <div class="effects-block"><img src="./img/effect6.png" alt="effect 6"></div>
+      </div>
+      <a href="javascript:;" class="button button-modal effects-button">Получить скидку</a>
+      <div class="effects-discount">
+        <p class="effects-discount__description">Собери команду и получи скидку на участие в игре</p>
+        <span class="effects-discount__help">скидка актуальна для игры с понедельника по четверг в 10:00 и 14:00
+          часов</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="price">
+    <div class="container">
+      <h2 class="price-title">Пакеты услуг</h2>
+      <div class="price-wrap">
+        <div class="price-block">
+          <div class="price-block__image">
+            <img src="./img/price1.png" alt="бочка">
+          </div>
+          <div class="price-block__header">
+            <h3 class="price-block__title">Пакет старт</h3>
+            <p class="price-block__description">Участвует до 12 человек</p>
+            <span class="price-block__time">2 часа</span>
+          </div>
+          <div class="price-block__content price-block__content-paper ">
+            <div class="price-block__item price-block__item-1"></div>
+            <div class="price-block__item price-block__item-2"></div>
+            <div class="price-block__item price-block__item-3"></div>
+            <div class="price-block__item price-block__item-4"></div>
+            <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+            <li class="price-block__info">Работает команда: ведущий, ди-джей, администратор</li>
+            <li class="price-block__info">Масштабный реквизит</li>
+            <li class="price-block__info">Фирменные футболки на игру </li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <li class="price-block__info">Задания с экзотическими животными</li>
+            <li class="price-block__info">Бесплатный гостевой доступ</li>
+            <li class="price-block__info">Дискотека с ведущим и DJ (игры, флэшмобы, батлы)</li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <h4 class="price-block__info-title">Дополнительные услуги:</h4>
+            <li class="price-block__info">Паспарту</li>
+            <li class="price-block__info">Фото/Видео</li>
+            <li class="price-block__info">Фирменный торт</li>
+            <li class="price-block__info">Сувениры</li>
+            <li class="price-block__info">Предоставление фуд-корта</li>
+          </div>
+          <a href="javascript:;" class="button button-modal price-block__button">Узнать стоимость</a>
+        </div>
+        <div class="price-block">
+          <div class="price-block__image">
+            <img src="./img/price2.png" alt="шляпа">
+          </div>
+          <div class="price-block__header">
+            <h3 class="price-block__title">Пакет МЭТР</h3>
+            <p class="price-block__description">Участвует до 12 человек</p>
+            <span class="price-block__time">2,5 часа</span>
+          </div>
+          <div class="price-block__content price-block__content-second ">
+            <div class="price-block__item price-block__item-1"></div>
+            <div class="price-block__item price-block__item-2"></div>
+            <div class="price-block__item price-block__item-3"></div>
+            <div class="price-block__item price-block__item-4"></div>
+            <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+            <li class="price-block__info">Работает команда: ведущий, ди-джей, администратор</li>
+            <li class="price-block__info">Масштабный реквизит</li>
+            <li class="price-block__info">Фирменные футболки на игру </li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <li class="price-block__info">Задания с экзотическими животными</li>
+            <li class="price-block__info">Бесплатный гостевой доступ</li>
+            <li class="price-block__info">Дискотека с ведущим и DJ (игры, флэшмобы, батлы)</li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <h4 class="price-block__info-title">Дополнительные услуги:</h4>
+            <li class="price-block__info">Паспарту</li>
+            <li class="price-block__info">Фото/Видео</li>
+            <li class="price-block__info">Фирменный торт</li>
+            <li class="price-block__info">Сувениры</li>
+            <li class="price-block__info">Предоставление фуд-корта</li>
+          </div>
+          <a href="javascript:;" class="button button-modal price-block__button">Узнать стоимость</a>
+        </div>
+        <div class="price-block">
+          <div class="price-block__image ">
+            <img src="./img/price3.png" alt="знак">
+          </div>
+          <div class="price-block__header">
+            <h3 class="price-block__title">Пакет ШОУ</h3>
+            <p class="price-block__description">Участвует до 12 человек</p>
+            <span class="price-block__time">3 часа</span>
+          </div>
+          <div class="price-block__content price-block__content-gold">
+            <div class="price-block__item price-block__item-1"></div>
+            <div class="price-block__item price-block__item-2"></div>
+            <div class="price-block__item price-block__item-3"></div>
+            <div class="price-block__item price-block__item-4"></div>
+            <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+            <li class="price-block__info">Работает команда: ведущий, ди-джей, администратор</li>
+            <li class="price-block__info">Масштабный реквизит</li>
+            <li class="price-block__info">Фирменные футболки на игру </li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <li class="price-block__info">Задания с экзотическими животными</li>
+            <li class="price-block__info">Бесплатный гостевой доступ</li>
+            <li class="price-block__info">Дискотека с ведущим и DJ (игры, флэшмобы, батлы)</li>
+            <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+            <h4 class="price-block__info-title">Дополнительные услуги:</h4>
+            <li class="price-block__info">Паспарту</li>
+            <li class="price-block__info">Фото/Видео</li>
+            <li class="price-block__info">Фирменный торт</li>
+            <li class="price-block__info">Сувениры</li>
+            <li class="price-block__info">Предоставление фуд-корта</li>
+          </div>
+          <a href="javascript:;" class="button button-modal price-block__button">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="chest">
+      <img src="./img/graphics/chest2.png" alt="сундук">
+    </div>
+    <div class="container">
+      <div id="faq">
+        <ul>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Сколько длится программа?</h3>
+            <p>
+              С момента встречи до финала проходит от 2,0 до 3,0 часов.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>На какой возраст рассчитана программа?</h3>
+            <p>Мы проводим квест для детей и взрослых от 6 до 99 лет. Программа усложняется либо облегчается в
+              зависимости от возраста.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Сколько человек участвует в квесте?</h3>
+            <p>Мы можем провести квест-шоу для 2-х и более человек по запросу.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Сколько человек проводит игру?</h3>
+            <p>От 2-х человек (ведущий, администратор). Старец Фура, Мэтр Теней и т.д.  в зависимости от выбранного
+              игрового пакета</p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Чем отличается программа для взрослых?</h3>
+            <p>Для взрослых компаний усложняются задания, сокращается время на прохождение испытаний, добавляются
+              задания на сплочение и командообразование.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Сколько стоит билет для родителей и зрителей?</h3>
+            <p>Взрослые и дети до 6 лет, не принимающие участие в игре, находятся на территории Форта бесплатно.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>Как производится оплата?</h3>
+            <p>50% оплачивается в момент бронирования даты, 50% в день игры.</p>
+          </li>
+        </ul>
+      </div>
+      <h2 class="faq-title">Остались вопросы?</h2>
+      <p class="faq-description">Позвоните нам или напишите свой номер и мы перезвоним в течение 15 минут</p>
+      <form action="POST">
+        <input placeholder="Имя" type="text" class="faq-input">
+        <input placeholder="Телефон" type="text" class="faq-input">
+        <input placeholder="E-mail" type="email" class="faq-input">
+        <button type="submit" class="faq-button button">Узнать стоимость</a>
+      </form>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2 class="reviews-title">Отзывы</h2>
+      <div class="reviews-block">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="contacts-title">Контакты</h2>
+      <div class="contacts-wrap">
+        <div class="contacts-block">
+          <img src="./img/contact.png" alt="contact image">
+        </div>
+        <div class="contacts-block">
+          <a href="tel:+375447750090" class="contacts-link">
+            <img src="./img/icons/phone.svg" alt="телефон иконка">
+            +375 44 7750090, доступен Viber
+          </a>
+          <a href="mailto:info@fortgame.by" class="contacts-link">
+            <img src="./img/icons/email.svg" alt="email иконка">
+            info@fortgame.by
+          </a>
+        </div>
+        <div class="contacts-block">
+          <img src="./img/contact2.png" alt="contact image">
+        </div>
+      </div>
+      <div class="contacts-block-wrap">
+        <a href="" class="contacts-link">
+          <img src="./img/icons/inst.png" alt="инста иконка">
+        </a>
+        <a href="" class="contacts-link">
+          <img src="./img/icons/ok.png" alt="одноклассники иконка">
+        </a>
+        <a href="" class="contacts-link">
+          <img src="./img/icons/fb.png" alt="фейсбук иконка">
+        </a>
+        <a href="" class="contacts-link">
+          <img src="./img/icons/vk.png" alt="вк иконка">
+        </a>
+        <a href="" class="contacts-link">
+          <img src="./img/icons/tg.png" alt="телеграм иконка">
+        </a>
+        <a href="" class="contacts-link">
+          <img src="./img/icons/wp.png" alt="ватсап иконка">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- map -->
+  <script charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc78f14bc80e7a23ee8d4040586853889a95784ab1210b6774ce47b219934f64&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">ИП Лопатко Юлия Владимировна</p>
+      <p class="footer-text">Свидетельство: №791274967 от 04.06.2021г. Выдано Администрацией Первомайского района
+        г.Бобруйска 213811, Могилевская обл., г. Бобруйск, ул. Орджоникидзе, д. 44, кв. 8</p>
+    </div>>
+  </footer>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+
+    let blocks = document.querySelectorAll('.passing-block');
+    let animationDelay = 3200,
+      delaySum = animationDelay * blocks.length
+    function resetPassingClasses() {
+      document.querySelectorAll('.passing-block').forEach(block => {
+        block.classList.remove('active')
+      })
+    }
+    // gift animation
+    function timerForPassingBlock() {
+      for (let index = 1; index < blocks.length + 1; index++) {
+        (function (i) {
+          setTimeout(function () {
+            resetPassingClasses()
+            document.querySelector(`.passing-block-${i}`).classList.add('active')
+          }, i * animationDelay)
+        }(index))
+      }
+    }
+
+    timerForPassingBlock()
+      (function () {
+        setInterval(function () {
+          timerForPassingBlock()
+        }, delaySum)
+      }())
+  </script>
+  <script src="./js/parallax-mouse.min.js"></script>
+  <script src="./js/rellax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
