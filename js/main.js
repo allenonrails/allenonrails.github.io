@@ -99,15 +99,65 @@
     },
   });
 
-  // animations
-  let rellax = new Rellax('.rellax', {
-    speed: -2,
-    center: false,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
+  var swiper = new Swiper(".price-wrap", {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      '768': {
+        slidesPerView: 3,
+      },
+      '568': {
+        slidesPerView: 2,
+      }
+    },
   });
+
+  var swiper = new Swiper(".slider-1", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+  });
+  var swiper = new Swiper(".slider-2", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+  });
+  var swiper = new Swiper(".slider-3", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+  });
+  var swiper = new Swiper(".slider-4", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+  });
+
+  // price block nav
+
+  document.querySelectorAll('.price-btn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      e.preventDefault()
+
+      btn.parentElement.querySelectorAll('.price-btn').forEach(button => {
+        button.classList.remove('price-btn-active')
+      })
+      btn.classList.add('price-btn-active')
+
+      let cardsPrice = btn.closest('.price-block').querySelectorAll('.price-block__content')
+      
+      cardsPrice.forEach(card => card.classList.remove('price-block__content-active'));
+
+      [...cardsPrice].filter(item => item.dataset.name === btn.dataset.target).map(item => item.classList.add("price-block__content-active"));
+    })
+  })
+
+  // animations
   parallaxMouse({ elements: '.about-block-image', moveFactor: 10, wrap: '.about', perspective: '100px' })
 
   // modal
