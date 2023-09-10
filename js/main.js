@@ -76,7 +76,7 @@
     loop: true
   });
 
-  var swiper = new Swiper(".mySwiper3", {
+  var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -99,43 +99,77 @@
     },
   });
 
-  var swiper = new Swiper(".price-wrap", {
+  var swiper4 = new Swiper(".price-wrap", {
     spaceBetween: 10,
     slidesPerView: 1,
-    loop: true,
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -1000],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+    breakpoints: {
+      '1050': {
+        effect: 'slide',
+        slidesPerView: 3,
+      },
+      '767': {
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        slidesPerView: 2,
+      }
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    breakpoints: {
-      '1050': {
-        slidesPerView: 3,
-      },
-      '767': {
-        slidesPerView: 2,
-      }
-    },
+
+
   });
 
-  var swiper = new Swiper(".slider-1", {
+  var swiper5 = new Swiper(".slider-1", {
     spaceBetween: 20,
     slidesPerView: 1,
     loop: true,
+      autoplay: {
+    delay: 3000,
+  },
   });
-  var swiper = new Swiper(".slider-2", {
+  var swiper6 = new Swiper(".slider-2", {
     spaceBetween: 20,
     slidesPerView: 1,
     loop: true,
+      autoplay: {
+    delay: 3000,
+  },
   });
-  var swiper = new Swiper(".slider-3", {
+  var swiper7 = new Swiper(".slider-3", {
     spaceBetween: 20,
     slidesPerView: 1,
     loop: true,
+      autoplay: {
+    delay: 3000,
+  },
   });
-  var swiper = new Swiper(".slider-4", {
+  var swiper8 = new Swiper(".slider-4", {
     spaceBetween: 20,
     slidesPerView: 1,
     loop: true,
+      autoplay: {
+    delay: 3000,
+  },
   });
 
   // price block nav
@@ -157,8 +191,6 @@
     })
   })
 
-  // animations
-  parallaxMouse({ elements: '.about-block-image', moveFactor: 10, wrap: '.about', perspective: '100px' })
 
   // modal
   document.querySelectorAll('.button-modal').forEach(btn => {

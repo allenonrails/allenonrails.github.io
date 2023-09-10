@@ -11,10 +11,11 @@ a {
 
 body {
   font-family: Colus;
-  height: 1000vh;
   background-color: #deac4c;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 html, body {
@@ -121,6 +122,7 @@ section img {
   z-index: 12;
   color: #FFDF00;
   font-size: 24px; 
+  display: block;
 }
 
 /* main */
@@ -372,6 +374,9 @@ section img {
   .main-button {
     max-width: 270px;
   }
+  .header-phone {
+    font-size: 20px;
+  }
 }
 
 /* about */
@@ -476,6 +481,52 @@ section img {
   margin-bottom: 5px;
   font-size: 36px;
   text-align: center;
+}
+
+.shadow {
+  position: relative;
+  max-width: 700px;
+  color: #fafafa;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #383534;
+  border-radius: 2px;
+}
+
+.shadow::before,
+.shadow::after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  top: -4px;
+  left: -4px;
+  background: linear-gradient(45deg,#333,#fafafa,#383534,#e0e0e0,#ffd,#fafafa,#000,#fafafa);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 30s linear infinite;
+}
+
+.shadow::after {
+  filter: blur(25px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .advantages-main__description {
@@ -773,6 +824,10 @@ section img {
   .passing-block:not(:nth-child(2n+2)){
     margin-right: 20px;
   }
+
+  .passing-block:not(:nth-child(3n+3)){
+    margin-right: 0px;
+  }
   
   .chest {
     display: none;
@@ -780,14 +835,20 @@ section img {
 }
 
 @media screen and (max-width: 500px) {
-
   .passing-block {
-    width: 300px;
+    width: 100%;
   } 
+  .passing-block:not(:nth-child(2n+2)){
+    margin-right: 0px;
+  }
 }
 /* new */
 .new {
   background: url(../img/bg-1.png) top center no-repeat;
+}
+
+.fort-image img {
+  border-radius: 2px;
 }
 
 /* fort */
@@ -886,6 +947,18 @@ section img {
 
 .swiper-button-next, .swiper-button-prev {
   color: #fff !important;
+}
+
+.price .swiper-button-next, .price .swiper-button-prev {
+  color: #333 !important;
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
 }
 
 @media screen and (max-width: 1096px) {
@@ -1069,6 +1142,7 @@ section img {
   margin-right: 10px;
   font-size: 16px;
   transition: .6s ease-in;
+  margin-bottom: 10px;
 }
 
 .price-btn-active, .price-btn:hover {
@@ -1107,6 +1181,7 @@ section img {
 .price-block__content-active {
   display: flex;
 }
+
 
 .price-block__content-paper {
   margin-right: 30px;

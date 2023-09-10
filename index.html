@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="./css/swiper.min.css" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <title>Квест-шоу Форт Бобр Ярд</title>
 </head>
 <body>
@@ -56,9 +56,14 @@
       <a href="#reviews" class="header-link">Вопросы</a>
       <a href="#contacts" class="header-link">Контакты</a>
     </nav>
-    <a href="tel:+375447750090" class="header-phone">
-      +375 44 775 00 90
-    </a>
+    <div class="header-phones">
+      <a href="tel:+375447750090" class="header-phone">
+        +375 44 775 00 90
+      </a>
+      <a href="tel:+375447750091" class="header-phone">
+        +375 44 775 00 91
+      </a>
+    </div>
     <div class="burger">
       <div class="line line-1"></div>
       <div class="line line-2"></div>
@@ -106,7 +111,7 @@
     <div class="container">
       <h3 id="about" class="advantages-main">Создадим игру под любой формат вашего праздника</h3>
       <p class="advantages-main__description">
-        Какой бы праздник вы ни отмечали, мы сделаем всё, чтобы праздник заполнился надолго
+        Наше захватывающее квест-шоу - идеальное развлечение для всех возрастов, от 6 до 99 лет! 
       </p>
       <div class="advantages-list">
         <div class="advantages-list-item letter ">
@@ -161,6 +166,9 @@
           <div class="advantages-list-item__text">Новый год и другие события</div>
           <a href="javascript:;" class="button button-modal advantages-list__button">Узнать стоимость</a>
         </div>
+      </div>
+      <div class="shadow">
+        Какой бы праздник вы ни отмечали, мы сделаем всё, чтобы праздник заполнился надолго
       </div>
       <div class="advantages-wrap">
         <div class="advantages-video ">
@@ -451,8 +459,8 @@
             <a href="javascript:;" class="button button-modal price-block__button">Узнать стоимость</a>
           </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -703,8 +711,8 @@
         }, delaySum)
       }())
   </script>
-  <script src="./js/parallax-mouse.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
