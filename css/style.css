@@ -395,6 +395,12 @@ section img {
   text-align: center;
 }
 
+.about-description {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
 .about-title {
   font-size: 100px;
   animation: pulsate 2.4s linear infinite;
@@ -462,13 +468,22 @@ section img {
 }
 
 .advantages-description {
-  font-size: 24px;
+  font-size: 18px;
+  max-width: 600px;
 }
 
 .advantages-main {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   font-size: 36px;
   text-align: center;
+}
+
+.advantages-main__description {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .advantages-list {
@@ -735,7 +750,7 @@ section img {
   position: relative;
   z-index: 32;
   color: #886B48;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 
@@ -747,7 +762,7 @@ section img {
 
 .passing-block__description  {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -796,6 +811,14 @@ section img {
   text-align: center;
   color: #CBBFA9;
   font-size: 54px;
+  animation: pulsate 2.4s linear infinite;
+}
+
+.fort-description {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #CBBFA9;
 }
 
 @media screen and (max-width: 500px) {
@@ -916,6 +939,11 @@ section img {
 
 .effects-title {
   font-size: 42px;
+}
+
+.effects-description {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .effects-wrap {
@@ -1051,16 +1079,29 @@ section img {
 .price-block__content {
   padding: 50px 40px;
   max-width: 400px;
-  min-height: 560px;
   position: relative;
   overflow: hidden;
   z-index: 5;
-  margin-right: 30px;
+  margin-left: 30px;
   font-family: Arial; 
   font-weight: 700; 
   margin-bottom: 30px;
   display: none;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1050px) {
+  .price-block__content {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price-block__content {
+    margin-left: 0;
+    margin: 0 auto !important;
+    margin-bottom: 30px !important;
+  }
 }
 
 .price-block__content-active {
@@ -1130,7 +1171,7 @@ section img {
   top: 0;
   left: 0;
   opacity: .7;
-  background: url('../img/gold.jpg') center center no-repeat;
+  background: url('../img/gold.jpg');
   background-size: cover;
 }
 
@@ -1168,7 +1209,6 @@ section img {
 }
 
 .price-block__button {
-  margin: 0 auto;
   display: block;
   max-width: 100px;
   font-size: 16px;
@@ -1194,6 +1234,8 @@ section img {
 
 @media screen and (max-width: 560px) {
   .price-block__button {
+    margin-left: 0;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
   .price-block__content-paper, .price-block__content-second, .price-block__content-gold {
