@@ -88,20 +88,21 @@ section img {
 
 .header .cloud {
   position: absolute;
-  top: 65%;
+  top: 40%;
   left: 50%;
   z-index: 10;
   transform:translate(-50%, -50%);
 }
 
 .header-menu {
-  margin-top: 100px;
+  margin-bottom: -20px;
+  padding-bottom: 10px;
   position: relative;
   z-index: 11;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .header-link {
@@ -175,7 +176,7 @@ section img {
 
 .main-text span {
   display: block;
-  font-size: 52px;
+  font-size: 50px;
   animation: pulsate 2.4s linear infinite;
 }
 
@@ -1514,6 +1515,39 @@ section.faq {
   outline: none;
 }
 
+/* companies */
+
+.companies-title {
+  margin-top: 70px;
+  font-size: 48px;
+  text-align: center;
+  color: #333;
+}
+
+.companies-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companies-block {
+  width: calc(100% / 12 * 3 - 20px);
+}
+
+@media screen and (max-width: 768px) {
+  .companies-block {
+    width: calc(100% / 12 * 4 - 20px);
+  } 
+}
+
+@media screen and (max-width: 510px) {
+  .companies-block {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  } 
+}
+
 /* reviews */
 
 .reviews {
@@ -1575,6 +1609,11 @@ section.faq {
 .contacts-block-wrap {
   display: flex;
   justify-content: center;
+}
+
+.contacts-link {
+  display: block;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 676px) {
