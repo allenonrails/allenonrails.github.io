@@ -171,7 +171,35 @@
     delay: 3000,
   },
   });
-
+  var swiper8 = new Swiper(".slider-4", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+      autoplay: {
+    delay: 3000,
+  },
+  });
+  var swiper9 = new Swiper(".companies-slider", {
+    slidesPerView: 'auto',
+    speed: 1000,
+    spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 1000,
+    },
+    breakpoints: {
+      '1442': {
+        spaceBetween: 10,
+        loop: false,
+        centeredSlides: false,
+        grabCursor: false,
+        slidesPerView: 10
+      },
+    }
+  });
+  
   // price block nav
 
   document.querySelectorAll('.price-btn').forEach(btn => {

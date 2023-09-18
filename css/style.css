@@ -1517,6 +1517,10 @@ section.faq {
 
 /* companies */
 
+.companies {
+  overflow: visible !important;
+}
+
 .companies-title {
   margin-top: 70px;
   font-size: 48px;
@@ -1524,28 +1528,23 @@ section.faq {
   color: #333;
 }
 
-.companies-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.companies-slider {
+  overflow: hidden;
+}
+
+.companies-slider .swiper-wrapper {
   justify-content: center;
+  align-items: center;
 }
 
-.companies-block {
-  width: calc(100% / 12 * 3 - 20px);
+.companies-slider .swiper-slide{
+  max-width: 250px;
 }
 
-@media screen and (max-width: 768px) {
-  .companies-block {
-    width: calc(100% / 12 * 4 - 20px);
-  } 
-}
-
-@media screen and (max-width: 510px) {
-  .companies-block {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  } 
+@media screen and (max-width: 520px) {
+  .companies-slider .swiper-slide{
+    max-width: 100px;
+  }
 }
 
 /* reviews */
