@@ -1183,6 +1183,17 @@ section img {
   display: flex;
 }
 
+.price-block__number {
+  display: none;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  animation: pulsate 4.4s linear infinite;
+}
+
+.price-block__number-active {
+  display: block;
+}
 
 .price-block__content-paper {
   margin-right: 30px;
@@ -1374,7 +1385,7 @@ section.faq {
   line-height: 1.45;
   position: relative;
   overflow: hidden;
-  max-height: 250px;
+  max-height: 500px;
   will-change: max-height;
   contain: layout;
   display: inline-block;
@@ -1399,8 +1410,6 @@ section.faq {
   overflow: hidden;
   padding: 0;
   margin: 0;
-  /*padding-bottom: 4px;*/
-  /*padding-top: 18px;*/
   background: transparent;
   border-top: 2px solid #CBBFA9;
   border-radius: 2px;

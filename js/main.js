@@ -212,8 +212,12 @@
       btn.classList.add('price-btn-active')
 
       let cardsPrice = btn.closest('.price-block').querySelectorAll('.price-block__content')
+      let cardPriceNums = btn.closest('.price-block').querySelectorAll(".price-block__number")
       
       cardsPrice.forEach(card => card.classList.remove('price-block__content-active'));
+      cardPriceNums.forEach(card => card.classList.remove('price-block__number-active'));
+
+      [...cardPriceNums].filter(item => item.dataset.name === btn.dataset.target).map(item => item.classList.add("price-block__number-active"));
 
       [...cardsPrice].filter(item => item.dataset.name === btn.dataset.target).map(item => item.classList.add("price-block__content-active"));
     })
