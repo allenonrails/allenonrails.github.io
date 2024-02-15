@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="./css/swiper.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Квест-шоу Форт Бобр Ярд</title>
 </head>
 
@@ -74,8 +74,8 @@
   </header>
 
   <main id="main" class="main">
-    <video class="main-video" muted autoplay loop>
-      <source src="./video/new2.mp4" type="video/mp4">
+    <video class="main-video" muted autoplay loop playsinline>
+      <source src="./video/background.mp4" type="video/mp4">
     </video>
     <div class="main-block">
       <h1 class="main-text">
@@ -172,7 +172,7 @@
         </div>
       </div>
       <div class="shadow">
-        Мы сделаем всё чтобы праздник запомнился надолго 
+        Мы сделаем всё, чтобы праздник запомнился надолго 
       </div>
       <div class="advantages-wrap">
         <div class="advantages-video ">
@@ -297,12 +297,13 @@
             </div>
             <div class="price-block__header">
               <h3 class="price-block__title">Старт</h3>
-              <p class="price-block__description">Участвует до 15 человек</p>
+              <p class="price-block__description">Участвует до 12 человек</p>
               <span class="price-block__time">2 часа</span>
             </div>
             <div class="price-nav">
               <button data-target="base" class="price-btn price-btn-active">Семейный праздник</button>
               <button data-target="default" class="price-btn">Корпоратив</button>
+              <button data-target="vip" class="price-btn">Выпускные</button>
             </div>
             <div data-name="base" class="price-block__content price-block__content-active price-block__content-paper ">
               <div class="price-block__item price-block__item-1"></div>
@@ -346,8 +347,31 @@
               <li class="price-block__info">Сувениры</li>
               <li class="price-block__info">Предоставление фуд-корта или беседки</li>
             </div>
+            <div data-name="vip" class="price-block__content price-block__content-paper ">
+              <div class="price-block__item price-block__item-1"></div>
+              <div class="price-block__item price-block__item-2"></div>
+              <div class="price-block__item price-block__item-3"></div>
+              <div class="price-block__item price-block__item-4"></div>
+              <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+              <li class="price-block__info">Работает команда: 1 ведущий, ди-джей, администратор</li>
+              <li class="price-block__info">Масштабный реквизит</li>
+              <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+              <li class="price-block__info">Эксклюзивные фирменные футболки для всех участников (выдается на время игры)</li>
+              <li class="price-block__info">Задания:  активные, интеллектуальные, экзотическими животными</li>
+              <li class="price-block__info">Испытания от Мастера Теней и Старца Фура</li>
+              <li class="price-block__info">Памятные подарки каждому участнику – диплом и фирменная шоколадка</li>
+              <li class="price-block__info">Бесплатный гостевой доступ (ограничено)</li>
+              <li class="price-block__info">Поздравление учителя (по желанию)</li>
+              <li class="price-block__info">Возможность сделать фото на фоне декораций после игры</li>
+              <h4 class="price-block__info-title">Дополнительные услуги:</h4>
+              <li class="price-block__info">Фото/Видео</li>
+              <li class="price-block__info">Фирменный торт</li>
+              <li class="price-block__info">Сувениры</li>
+              <li class="price-block__info">Предоставление фуд-корта или беседки</li>
+            </div>
             <span data-name="base" class="price-block__number price-block__number-active">600р</span>
             <span data-name="default" class="price-block__number">950р</span>
+            <span data-name="vip" class="price-block__number">990р</span>
             <a href="javascript:;" class="button button-modal price-block__button">Записаться</a>
           </div>
           <div class="swiper-slide price-block">
@@ -356,12 +380,13 @@
             </div>
             <div class="price-block__header">
               <h3 class="price-block__title">МЭТР</h3>
-              <p class="price-block__description">Участвует до 15 человек</p>
+              <p class="price-block__description">Участвует до 12 человек</p>
               <span class="price-block__time">2,5 часа</span>
             </div>
             <div class="price-nav">
               <button data-target="base" class="price-btn price-btn-active">Семейный праздник</button>
               <button data-target="default" class="price-btn">Корпоратив</button>
+              <button data-target="vip" class="price-btn">Выпускные</button>
             </div>
             <div data-name="base" class="price-block__content-active price-block__content price-block__content-second ">
               <div class="price-block__item price-block__item-1"></div>
@@ -410,8 +435,34 @@
               <li class="price-block__info">Сувениры</li>
               <li class="price-block__info">Предоставление фуд-корта или беседки</li>
             </div>
+            <div data-name="vip" class="price-block__content price-block__content-second ">
+              <div class="price-block__item price-block__item-1"></div>
+              <div class="price-block__item price-block__item-2"></div>
+              <div class="price-block__item price-block__item-3"></div>
+              <div class="price-block__item price-block__item-4"></div>
+              <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+              <li class="price-block__info">Работает команда: 1 ведущий, ди-джей, администратор</li>
+              <li class="price-block__info">Масштабный реквизит</li>
+              <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+              <li class="price-block__info">Эксклюзивные фирменные футболки для всех участников (выдается на время игры)</li>
+              <li class="price-block__info">Задания:  активные, интеллектуальные, экзотическими животными, испытания из FortPRO</li>
+              <li class="price-block__info">Музыкальные интерактивы от DJ (игры, флэшмобы и баттлы)</li>
+              <li class="price-block__info">Испытания от Мастера Теней и Старца Фура</li>
+              <li class="price-block__info">Памятные подарки каждому участнику – диплом и фирменная шоколадка</li>
+              <li class="price-block__info">Бесплатный гостевой доступ (ограничено)</li>
+              <li class="price-block__info">Челлендж</li>
+              <li class="price-block__info">Аренда беседки 1 час</li>
+              <li class="price-block__info">Поздравление учителя (по желанию)</li>
+              <li class="price-block__info">Возможность сделать фото на фоне декораций после игры</li>
+              <h4 class="price-block__info-title">Дополнительные услуги:</h4>
+              <li class="price-block__info">Фото/Видео</li>
+              <li class="price-block__info">Фирменный торт</li>
+              <li class="price-block__info">Сувениры</li>
+              <li class="price-block__info">Предоставление фуд-корта или беседки</li>
+            </div>
             <span data-name="base" class="price-block__number price-block__number-active">800р</span>
             <span data-name="default" class="price-block__number">1300р</span>
+            <span data-name="vip" class="price-block__number">1400р</span>
             <a href="javascript:;" class="button button-modal price-block__button">Записаться</a>
           </div>
           <div class="swiper-slide price-block">
@@ -420,12 +471,13 @@
             </div>
             <div class="price-block__header">
               <h3 class="price-block__title">ШОУ</h3>
-              <p class="price-block__description">Участвует до 15 человек</p>
+              <p class="price-block__description">Участвует до 12 человек</p>
               <span class="price-block__time">3 часа</span>
             </div>
             <div class="price-nav">
               <button data-target="base" class="price-btn price-btn-active">Семейный праздник</button>
               <button data-target="default" class="price-btn">Корпоратив</button>
+              <button data-target="vip" class="price-btn">Выпускные</button>
             </div>
             <div data-name="base" class="price-block__content price-block__content-active price-block__content-gold">
               <div class="price-block__item price-block__item-1"></div>
@@ -477,13 +529,65 @@
               <li class="price-block__info">Возможность сделать фото на фоне декораций после игры</li>
               <li class="price-block__info">Аренда фуд-корт зоны или беседки (на выбор) - 1 час после игры</li>
             </div>
+            <div data-name="vip" class="price-block__content price-block__content-gold ">
+              <div class="price-block__item price-block__item-1"></div>
+              <div class="price-block__item price-block__item-2"></div>
+              <div class="price-block__item price-block__item-3"></div>
+              <div class="price-block__item price-block__item-4"></div>
+              <li class="price-block__info">Локация в крепости XIXв - 600м²</li>
+              <li class="price-block__info">Работает команда: 1 ведущий, ди-джей, администратор</li>
+              <li class="price-block__info">Масштабный реквизит</li>
+              <li class="price-block__info">Профессиональный свет, звук, спецэффекты</li>
+              <li class="price-block__info">Эксклюзивные фирменные футболки для всех участников (выдается на время игры)</li>
+              <li class="price-block__info">Задания:  активные, интеллектуальные, экзотическими животными, испытания из FortPRO</li>
+              <li class="price-block__info">Музыкальные интерактивы от DJ (игры, флэшмобы и баттлы)</li>
+              <li class="price-block__info">Испытания от Мастера Теней и Старца Фура</li>
+              <li class="price-block__info">Памятные подарки каждому участнику: диплом, фирменная шоколадка, лента выпускника ФортБобрЯрд, сытное угощение</li>
+              <li class="price-block__info">Сюрпризы (лоты) для счастливчиков</li>
+              <li class="price-block__info">Бесплатный гостевой доступ (ограничено)</li>
+              <li class="price-block__info">Челлендж</li>
+              <li class="price-block__info">Дискотека в стиле TikTok</li>
+              <li class="price-block__info">Фотограф на квест-шоу</li>
+              <li class="price-block__info">Торт в стиле Форт Боярд (2кг)</li>
+              <li class="price-block__info">Аренда фуд-корт зоны или беседки (на выбор) - 1 час после игры</li>
+              <li class="price-block__info">Поздравление учителя (по желанию)</li>
+              <li class="price-block__info">Возможность сделать фото на фоне декораций после игры</li>
+
+            </div>
             <span data-name="base" class="price-block__number price-block__number-active">1280р</span>
             <span data-name="default" class="price-block__number">2000р</span>
+            <span data-name="vip" class="price-block__number">1800р</span>
             <a href="javascript:;" class="button button-modal price-block__button">Записаться</a>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fortpro">
+    <div class="container">
+      <div class="advantages-wrap" style="margin-top: 100px;">
+        <div class="advantages-video ">
+          <img loading="lazy" src="./img/fortpro.png" alt="видео о форт боярде">
+        </div>
+        <div class="advantages-text">
+          <h2 class="fortpro-title ">FORT PRO <span>18+</span></h2>
+          <p class="advantages-description">
+            <li class="fortpro-description__info price-block__info">Локация в крепости XIXв - 600м²</li>
+            <li class="fortpro-description__info price-block__info">Масштабный реквизит</li>
+            <li class="fortpro-description__info price-block__info">Составление индивидуального сценария для вашей команды, исходя из предварительно заполненных участниками "АНКЕТА СТРАХА" </li>
+            <li class="fortpro-description__info price-block__info">Испытания в темноте</li>
+            <li class="fortpro-description__info price-block__info">Задания на выносливость</li>
+            <li class="fortpro-description__info price-block__info">Интеллектуальные схватки с самим Мастером Теней и Старцем Фура</li>
+            <li class="fortpro-description__info price-block__info">Экзотические животные</li>
+            <li class="fortpro-description__info price-block__info">В программу входит работа ведущего, администратора, инструктора, DJ, два персонажа (Мастер Теней, Старец Фура)</li>
+            <li class="fortpro-description__info price-block__info">Фирменные майки на время игры</li>
+            <li class="fortpro-description__info price-block__info">Подарки</li>
+          </p>
+          <a href="javascript:;" class="button button-modal advantages-button  ">Записаться</a>
+        </div>
       </div>
     </div>
   </section>
@@ -587,34 +691,19 @@
         <div class="swiper mySwiper3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/wCT1eEDYoD8?si=AuClX8NkHsfNNzBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                       
             </div>
             <div class="swiper-slide">
-              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/wCT1eEDYoD8?si=AuClX8NkHsfNNzBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="swiper-slide">
-              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/wCT1eEDYoD8?si=AuClX8NkHsfNNzBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
             </div>
             <div class="swiper-slide">
-              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/wCT1eEDYoD8?si=AuClX8NkHsfNNzBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="swiper-slide">
-              <iframe src="https://www.youtube-nocookie.com/embed/1iBadb96Tbg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/wCT1eEDYoD8?si=AuClX8NkHsfNNzBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
           <div class="swiper-pagination"></div>

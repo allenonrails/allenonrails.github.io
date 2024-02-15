@@ -1757,3 +1757,16 @@ text-align: center;
     font-size: 26px !important;
   }
 }
+
+.fortpro-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.fortpro-title span{
+  animation: pulsatered 3s linear infinite;
+}
+
+@keyframes pulsatered{
+  50% { color: red; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px rgb(227, 67, 67), 0 0 8px rgb(231, 80, 80); }
+ }
