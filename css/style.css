@@ -6,8 +6,7 @@
 
 a {
   text-decoration: none;
-  color: #fff;
-}
+  color: #fff; }
 
 body {
   font-family: Colus;
@@ -1136,6 +1135,7 @@ section img {
 
 .price-btn {
   cursor: pointer;
+  display: inline-block;
   border: none;
   background-color: #fafafa;
   padding: 10px;
@@ -1542,7 +1542,7 @@ section.faq {
 }
 
 .companies-slider .swiper-wrapper {
-  justify-content: center;
+
   align-items: center;
 }
 
@@ -1765,6 +1765,13 @@ text-align: center;
 
 .fortpro-title span{
   animation: pulsatered 3s linear infinite;
+}
+
+.fortpro-description {
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 5px;
+  background: url('../img/fort_pro_bg.png') center center no-repeat;
 }
 
 @keyframes pulsatered{
