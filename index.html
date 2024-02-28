@@ -11,14 +11,6 @@
 </head>
 
 <body>
-  <div class="preloader">
-    <div class="preloader__row">
-      <div class="preloader__item"></div>
-      <div class="preloader__item"></div>
-    </div>
-    <h2 class="preloader-title">Загрузка</h2>
-  </div>
-
   <div class="modal">
     <div class="cross">
       <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -684,7 +676,7 @@
           <div class="swiper-slide"><img loading="lazy" src="./img/companies/company-14.png" alt="company 14"></div>
           <div class="swiper-slide"><img loading="lazy" src="./img/companies/company-15.png" alt="company 15"></div>
           <div class="swiper-slide"><img loading="lazy" src="./img/companies/company-16.png" alt="company 16"></div>
-          <div class="swiper-slide"><img loading="lazy" src="./img/companies/company-17.svg" alt="company 17"></div>
+          <div class="swiper-slide"><img src="./img/companies/company-17.svg" alt="company 17"></div>
           <div class="swiper-slide"><img src="./img/companies/company-18.png" alt="company 18" loading="lazy"></div>
           <div class="swiper-slide"><img src="./img/companies/company-19.png" alt="company 19" loading="lazy"></div>
           <div class="swiper-slide"><img src="./img/companies/company-20.png" alt="company 20" loading="lazy"></div>
@@ -812,20 +804,17 @@
         <a href="https://www.instagram.com/fort_boyard_bobruisk/" class="contacts-link">
           <img loading="lazy" src="./img/icons/inst.png" alt="инстаграм иконка">
         </a>
-        <a href="https://ok.ru/group/56198351749320" class="contacts-link">
-          <img loading="lazy" src="./img/icons/ok.png" alt="одноклассники иконка">
-        </a>
-        <a href="https://www.facebook.com/FortBobrYard" class="contacts-link">
-          <img loading="lazy" src="./img/icons/fb.png" alt="фейсбук иконка">
-        </a>
         <a href="https://vk.com/fortbobryard" class="contacts-link">
           <img loading="lazy" src="./img/icons/vk.png" alt="вк иконка">
         </a>
         <a href="https://t.me/fort_bobr_yard" class="contacts-link">
           <img loading="lazy" src="./img/icons/tg.png" alt="телеграм иконка">
         </a>
-        <a href="" class="contacts-link">
+        <a href="https://wa.me/375447750090" class="contacts-link">
           <img loading="lazy" src="./img/icons/wp.png" alt="ватсап иконка">
+        </a>
+        <a href="viber://chat?number=%2B375447750091" class="contacts-link">
+          <img width="35px" style="margin-top: 5px;" loading="lazy" src="./img/icons/viber.png" alt="viber иконка">
         </a>
       </div>
     </div>
@@ -843,14 +832,11 @@
     </div>>
   </footer>
   <script>
-    window.onload = function () {
       document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
+      document.setTimeout(function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
-      }, 500);
-    }
-
+      }, 1200);
     let blocks = document.querySelectorAll('.passing-block');
     let animationDelay = 4000,
       delaySum = animationDelay * blocks.length
